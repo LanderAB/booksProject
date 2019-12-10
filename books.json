@@ -1,0 +1,49 @@
+{
+  "books": [
+    {
+      "id": 12,
+      "name": "Narco000",
+      "author": "Rowling1"
+    },
+    {
+      "id": 13,
+      "name": "Bombasto",
+      "author": "Rowling2"
+    },
+    {
+      "id": 14,
+      "name": "Celeritas",
+      "author": "Rowling3"
+    },
+    {
+      "id": 15,
+      "name": "Magneta",
+      "author": "Rowling4"
+    },
+    {
+      "id": 16,
+      "name": "RubberMan",
+      "author": "Rowling5"
+    },
+    {
+      "id": 17,
+      "name": "Dynama",
+      "author": "Rowling6"
+    },
+    {
+      "id": 18,
+      "name": "Dr IQ",
+      "author": "Rowling7"
+    },
+    {
+      "id": 19,
+      "name": "Magma",
+      "author": "Rowling8"
+    },
+    {
+      "id": 20,
+      "name": "Tornad",
+      "author": "Rowling9"
+    }
+  ]
+}

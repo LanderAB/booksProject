@@ -1,47 +1,45 @@
 <div class="limiter">
-    <div class="container-table100">
-        <div class="wrap-table100">
-            <div class="table100 ver1 m-b-110">
-                <div class="table100-head">
-                    <table>
-                        <thead>
-                            <tr class="row100 head">
-                                <th class="cell100 column1">ID</th>
-                                <th class="cell100 column2">Nombre</th>
-                                <th class="cell100 column3">Autor</th>
-                                <th class="cell100 column4">Opciones</th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-
-                <div class="table100-body js-pscroll">
-                    <table>
-                        <tbody>
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Like a butterfly</td>
-                                <td class="cell100 column2">Boxing</td>
-                                <td class="cell100 column3">Aaron Chapman</td>
-                                <td class="cell100 column4">9:00 AM - 11:00 AM</td>
-                            </tr>
-
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Mind & Body</td>
-                                <td class="cell100 column2">Yoga</td>
-                                <td class="cell100 column3">Adam Stewart</td>
-                                <td class="cell100 column4">8:00 AM - 9:00 AM</td>
-                            </tr>
-
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Crit Cardio</td>
-                                <td class="cell100 column2">Gym</td>
-                                <td class="cell100 column3">Aaron Chapman</td>
-                                <td class="cell100 column4">9:00 AM - 10:00 AM</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+  <div class="container-table100">
+    <div class="wrap-table100">
+      <div class="table100 ver1 m-b-110">
+        <div class="table100-head">
+          <table>
+            <thead>
+              <tr class="row100 head">
+                <th class="cell100 column1">ID</th>
+                <th class="cell100 column2">Nombre</th>
+                <th class="cell100 column3">Autor</th>
+                <th class="cell100 column4">Opciones</th>
+              </tr>
+            </thead>
+          </table>
         </div>
+
+        <div class="table100-body js-pscroll">
+          <table>
+            <tbody>
+              <tr class="row100 body" *ngFor="let book of books">
+                <td class="cell100 column1">
+                  <a routerLink="/detail/{{ book.id }}">{{ book.id }}</a>
+                </td>
+                <td class="cell100 column2">
+                  <a routerLink="/detail/{{ book.id }}">{{ book.name }}</a>
+                </td>
+                <td class="cell100 column3">
+                  <a routerLink="/detail/{{ book.id }}">{{ book.author }}</a>
+                </td>
+                <td class="cell100 column4">
+                  <a routerLink="/detail/{{ book.id }}"
+                    ><img src="/assets/img/lapiz.png"/><a
+                    (click)="delete(book)"
+                      ><img src="/assets/img/borrar.png"/></a
+                  ></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

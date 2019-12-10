@@ -7,5 +7,12 @@
     <input [(ngModel)]="book.name" placeholder="name" />
   </label>
 </div>
-<button >save</button>
+<div>
+    <label
+      >author:
+      <input [(ngModel)]="book.author" placeholder="author" />
+    </label>
+  </div>
+<button (click)="save()">save</button>
+<button (click)="goBack()">go back</button>
 </div>
